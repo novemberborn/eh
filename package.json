@@ -1,25 +1,28 @@
 {
-  "name": "misdeed",
+  "name": "eh",
   "version": "0.1.0",
-  "description": "Promise-based task management with abortion",
+  "description": "Promise-based execution with halting",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/novemberborn/misdeed"
+    "url": "https://github.com/novemberborn/eh"
   },
   "keywords": [
     "promise",
     "promises",
     "pending",
-    "control-flow"
+    "control-flow",
+    "abort",
+    "cancel",
+    "halt"
   ],
   "author": "Mark Wubben (http://novemberborn.net/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/novemberborn/misdeed/issues"
+    "url": "https://github.com/novemberborn/eh/issues"
   },
-  "homepage": "https://github.com/novemberborn/misdeed"
+  "homepage": "https://github.com/novemberborn/eh"
 }

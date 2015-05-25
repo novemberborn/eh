@@ -1,19 +1,17 @@
 'use strict';
 
-const _Task = require('./lib/Task');
+const HaltableExecution = require('./lib/HaltableExecution');
 
-function misdeed(Ctor) {
-  class Task extends _Task {
-    constructor(executor) {
-      super(Ctor, executor);
-    }
-  }
-
+function eh(PromiseCtor) {
   return {
-    Task: Task
+    Eh: class extends HaltableExecution {
+      constructor(executor) {
+        super(PromiseCtor, executor);
+      }
+    }
   };
 }
 
-exports = module.exports = misdeed;
+exports = module.exports = eh;
 
-exports.Task = misdeed(Promise).Task;
+exports.Eh = eh(Promise).Eh;
