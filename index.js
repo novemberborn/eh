@@ -1,17 +1,16 @@
 'use strict';
 
-const util = require('util');
-
-const Task = require('./lib/Task');
+const _Task = require('./lib/Task');
 
 function misdeed(Ctor) {
-  const Coupled = function(executor) {
-    Task.call(this, Ctor, executor);
-  };
-  util.inherits(Coupled, Task);
+  class Task extends _Task {
+    constructor(executor) {
+      super(Ctor, executor);
+    }
+  }
 
   return {
-    Task: Coupled
+    Task: Task
   };
 }
 

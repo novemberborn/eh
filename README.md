@@ -2,7 +2,7 @@
 
 Promise-based task management with abortion.
 
-Requires native support for `Promise`, `const` and `let`.
+Requires native support for `Promise`, `class`, `const` and `let`.
 
 [Theme song](https://soundcloud.com/buck65/misdeed).
 
