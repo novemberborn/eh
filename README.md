@@ -4,6 +4,10 @@ Promise-based execution with halting.
 
 Requires native support for `Promise`, `class`, `const` and `let`.
 
+## Deprecation Notice
+
+This module is no longer maintained.
+
 ## Installation
 
 ```
